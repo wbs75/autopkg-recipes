@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest Trim Enabler disk image.</string>
+    <string>Downloads latest TechTool Pro 7 disk image.</string>
     <key>Identifier</key>
-    <string>com.github.wbs75.download.trimenabler</string>
+    <string>com.github.wbs75.download.TechToolPro-7</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>TrimEnabler</string>
+        <string>TechToolPro-7</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.3.0</string>
