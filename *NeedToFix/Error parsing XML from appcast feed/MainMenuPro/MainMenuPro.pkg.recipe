@@ -72,7 +72,7 @@
                     <key>options</key>
                     <string>purge_ds_store</string>
                     <key>scripts</key>
-                    <string>MainMenur_Scripts</string>
+                    <string>MainMenuPro_Scripts</string>
                     <key>chown</key>
                     <array>
                         <dict>
