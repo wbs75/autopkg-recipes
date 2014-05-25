@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads Musicality and imports into Munki.</string>
+    <key>Identifier</key>
+    <string>com.github.wbs75.munki.Musicality</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Musicality</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>audio\video</string>
+        <key>pkginfo</key>
+        <dict>
+            <key>catalogs</key>
+            <array>
+                <string>testing</string>
+            </array>
+            <key>description</key>
+            <string>Musicality is a Mac OS X music player for Pandora, Last.fm, and Grooveshark that puts you in control. Use the media keys (F7, F8, F9), your own keyboard shortcuts, or the Apple remote to play, pause, skip, and rate your music. Stream to your AirPort, Apple TV, or any AirPlay-enabled device. Musicality gets your music out of the browser and into its very own window-no more juggling extra browser tabs (or accidentally closing the wrong one). Plus Growl notifications and Last.fm integration -- Musicality makes your music better!</string>
+            <key>display_name</key>
+            <string>Musicality</string>
+            <key>name</key>
+            <string>%NAME%</string>
+            <key>unattended_install</key>
+            <true/>
+        </dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.2.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.wbs75.download.Musicality</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>Unarchiver</string>
+            <key>Arguments</key>
+            <dict>
+                <key>purge_destination</key>
+                <true/>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>DmgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>dmg_root</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                <key>dmg_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%dmg_path%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
