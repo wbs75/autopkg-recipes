@@ -10,9 +10,11 @@
     <dict>
         <key>NAME</key>
         <string>CleanMyMac2</string>
+        <key>SPARKLE_FEED_URL</key>
+        <string>http://updates.devmate.com</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.3.0</string>
+    <string>0.2.0</string>
     <key>Process</key>
     <array>
         <dict>

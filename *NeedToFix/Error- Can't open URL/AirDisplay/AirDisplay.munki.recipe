@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Air Display disk image and imports into Munki.</string>
+    <string>Downloads the latest Air Display disk image and imports into Munki</string>
     <key>Identifier</key>
     <string>com.github.wbs75.munki.airdisplay</string>
     <key>Input</key>
@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>AirDisplay</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>audio\video</string>
+        <string>apps</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -19,7 +19,7 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>With Air Display, you can turn your Mac into a wireless display. Extend your desktop to another Mac or Windows computer!</string>
+            <string>Air Display, you can turn your Mac into a wireless display. Extend your desktop to another Mac or Windows computer!</string>
             <key>display_name</key>
             <string>Air Display</string>
             <key>name</key>
@@ -29,11 +29,15 @@
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.3.0</string>
+    <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.wbs75.download.airdisplay</string>
+    <string>com.github.wbs75.munki.airdisplay</string>
     <key>Process</key>
     <array>
+        <dict>
+            <key>Processor</key>
+            <string>MunkiPkginfoMerger</string>
+        </dict>
         <dict>
             <key>Arguments</key>
             <dict>
