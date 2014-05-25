@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Payload Extractor disk image and imports into Munki.</string>
+    <string>Downloads Payload Extractor and imports into Munki.</string>
     <key>Identifier</key>
     <string>com.github.wbs75.munki.PayloadExtractor</string>
     <key>Input</key>
@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>PayloadExtractor</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>system-admin</string>
+        <string>audio\video</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -29,16 +29,36 @@
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.3.0</string>
+    <string>0.2.0</string>
     <key>ParentRecipe</key>
     <string>com.github.wbs75.download.PayloadExtractor</string>
     <key>Process</key>
     <array>
         <dict>
+            <key>Processor</key>
+            <string>Unarchiver</string>
+            <key>Arguments</key>
+            <dict>
+                <key>purge_destination</key>
+                <true/>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>DmgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>dmg_root</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                <key>dmg_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
+            </dict>
+        </dict>
+        <dict>
             <key>Arguments</key>
             <dict>
                 <key>pkg_path</key>
-                <string>%pathname%</string>
+                <string>%dmg_path%</string>
                 <key>repo_subdirectory</key>
                 <string>%MUNKI_REPO_SUBDIR%</string>
             </dict>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest MainMenu Pro disk image and imports into Munki.</string>
+    <string>Downloads MainMenu Pro and imports into Munki.</string>
     <key>Identifier</key>
     <string>com.github.wbs75.munki.MainMenuPro</string>
     <key>Input</key>
@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>MainMenuPro</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>utilities</string>
+        <string>audio\video</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -35,10 +35,30 @@
     <key>Process</key>
     <array>
         <dict>
+            <key>Processor</key>
+            <string>Unarchiver</string>
+            <key>Arguments</key>
+            <dict>
+                <key>purge_destination</key>
+                <true/>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>DmgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>dmg_root</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                <key>dmg_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
+            </dict>
+        </dict>
+        <dict>
             <key>Arguments</key>
             <dict>
                 <key>pkg_path</key>
-                <string>%pathname%</string>
+                <string>%dmg_path%</string>
                 <key>repo_subdirectory</key>
                 <string>%MUNKI_REPO_SUBDIR%</string>
             </dict>
