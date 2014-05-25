@@ -21,7 +21,7 @@
             <key>Arguments</key>
             <dict>
                 <key>appcast_url</key>
-                <string>http://groths.org/trimenabler/updates/update.xml</string>
+                <string>http://hactheplanet.com/appcast/payloadextractor/</string>
             </dict>
         </dict>
         <dict>

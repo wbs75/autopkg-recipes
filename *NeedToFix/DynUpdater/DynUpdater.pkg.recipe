@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Trim Enabler and creates a package.</string>
+    <string>Downloads the latest Dyn Updater and creates a package.</string>
     <key>Identifier</key>
-    <string>com.github.wbs75.pkg.trimenabler</string>
+    <string>com.github.wbs75.pkg.dynupdater</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>TrimEnabler</string>
+        <string>dynupdater</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.3.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.wbs75.download.trimenabler</string>
+    <string>com.github.wbs75.download.dynupdater</string>
     <key>Process</key>
     <array>
         <dict>
@@ -68,11 +68,11 @@
                     <key>pkgdir</key>
                     <string>%RECIPE_CACHE_DIR%</string>
                     <key>id</key>
-                    <string>Cindori.TrimEnabler</string>
+                    <string>%bundleid%</string>
                     <key>options</key>
                     <string>purge_ds_store</string>
                     <key>scripts</key>
-                    <string>Trimenabler_Scripts</string>
+                    <string>DynUpdater_Scripts</string>
                     <key>chown</key>
                     <array>
                         <dict>

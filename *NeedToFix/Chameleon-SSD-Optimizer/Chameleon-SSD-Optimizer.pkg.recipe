@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Trim Enabler and creates a package.</string>
+    <string>Downloads the latest Chameleon-SSD-Optimizer and creates a package.</string>
     <key>Identifier</key>
-    <string>com.github.wbs75.pkg.trimenabler</string>
+    <string>com.github.wbs75.pkg.Chameleon-SSD-Optimizer</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>TrimEnabler</string>
+        <string>Chameleon-SSD-Optimizer</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.3.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.wbs75.download.trimenabler</string>
+    <string>com.github.wbs75.download.Chameleon-SSD-Optimizer</string>
     <key>Process</key>
     <array>
         <dict>
@@ -68,11 +68,11 @@
                     <key>pkgdir</key>
                     <string>%RECIPE_CACHE_DIR%</string>
                     <key>id</key>
-                    <string>Cindori.TrimEnabler</string>
+                    <string>%bundleid%</string>
                     <key>options</key>
                     <string>purge_ds_store</string>
                     <key>scripts</key>
-                    <string>Trimenabler_Scripts</string>
+                    <string>Chameleon-SSD-Optimizer_Scripts</string>
                     <key>chown</key>
                     <array>
                         <dict>

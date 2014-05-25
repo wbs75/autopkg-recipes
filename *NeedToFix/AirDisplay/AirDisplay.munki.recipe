@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>airdisplay</string>
+        <string>AirDisplay</string>
         <key>MUNKI_REPO_SUBDIR</key>
         <string>audio\video</string>
         <key>pkginfo</key>
@@ -29,7 +29,7 @@
         </dict>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>0.3.0</string>
     <key>ParentRecipe</key>
     <string>com.github.wbs75.download.airdisplay</string>
     <key>Process</key>

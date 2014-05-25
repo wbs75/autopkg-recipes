@@ -9,10 +9,10 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>airdisplay</string>
+        <string>AirDisplay</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.2.0</string>
+    <string>0.3.0</string>
     <key>ParentRecipe</key>
     <string>com.github.wbs75.download.airdisplay</string>
     <key>Process</key>
@@ -68,11 +68,11 @@
                     <key>pkgdir</key>
                     <string>%RECIPE_CACHE_DIR%</string>
                     <key>id</key>
-                    <string>com.avatron.AirDisplayHost2</string>
+                    <string>%bundleid%</string>
                     <key>options</key>
                     <string>purge_ds_store</string>
                     <key>scripts</key>
-                    <string>airdisplay_Scripts</string>
+                    <string>AirDisplay_Scripts</string>
                     <key>chown</key>
                     <array>
                         <dict>
