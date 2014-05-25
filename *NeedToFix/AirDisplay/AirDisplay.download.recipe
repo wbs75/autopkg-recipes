@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest Trim Enabler disk image.</string>
+    <string>Downloads latest Airdisplay disk image.</string>
     <key>Identifier</key>
-    <string>com.github.wbs75.download.trimenabler</string>
+    <string>com.github.wbs75.download.airdisplay</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>TrimEnabler</string>
+        <string>airdisplay</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.3.0</string>
+    <string>0.2.0</string>
     <key>Process</key>
     <array>
         <dict>
@@ -21,7 +21,7 @@
             <key>Arguments</key>
             <dict>
                 <key>appcast_url</key>
-                <string>http://groths.org/trimenabler/updates/update.xml</string>
+                <string>http://www.avatron.com/updates/software/airdisplay/appcast.xml</string>
             </dict>
         </dict>
         <dict>
