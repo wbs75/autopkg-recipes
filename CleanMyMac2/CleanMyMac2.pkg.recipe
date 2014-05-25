@@ -70,7 +70,7 @@
                     <key>id</key>
                     <string>com.macpaw.CleanMyMac2</string>
                     <key>options</key>
-                    <string>purge_ds_store</string>
+                    <string>purge_ds_store</string>error.md~
                     <key>scripts</key>
                     <string>CleanMyMac2_Scripts</string>
                     <key>chown</key>
