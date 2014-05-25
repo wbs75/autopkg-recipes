@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>iTeleport-Connect</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>audio\video</string>
+        <string>productivity</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
