@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Trim Enabler disk image and imports into Munki.</string>
+    <string>Downloads the latest IconBox disk image and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.wbs75.munki.trimenabler</string>
+    <string>com.github.wbs75.munki.iconbox</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>TrimEnabler</string>
+        <string>IconBox</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>utilities</string>
+        <string>productivity</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -19,10 +19,9 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Trim Enabler is the first and safest utility for enabling Trim in Mac OS X. 
-            With the flip of a switch you can improve the speed and longevity of your Solid State Drive.</string>
+            <string>IconBox is a helpful organizational tool for Macs. When the first version of IconBox was released 8 years ago, it was the first Icon Organizer running on Mac OS X, allowing users to conveniently organize their collection of icons in an iPhoto-like way. With version 2.5, IconBox has been completely rewritten and features a brand new interface.</string>
             <key>display_name</key>
-            <string>Trim Enabler</string>
+            <string>IconBox</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
@@ -32,7 +31,7 @@
     <key>MinimumVersion</key>
     <string>0.3.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.wbs75.download.trimenabler</string>
+    <string>com.github.wbs75.download.iconbox</string>
     <key>Process</key>
     <array>
         <dict>
