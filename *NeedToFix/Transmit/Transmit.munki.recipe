@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Trim Enabler disk image and imports into Munki.</string>
+    <string>Downloads the latest Transmit disk image and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.wbs75.munki.trimenabler</string>
+    <string>com.github.wbs75.munki.Transmit</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>TrimEnabler</string>
+        <string>Transmit</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>utilities</string>
+        <string>datatransfer</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -19,10 +19,9 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Trim Enabler is the first and safest utility for enabling Trim in Mac OS X. 
-            With the flip of a switch you can improve the speed and longevity of your Solid State Drive.</string>
+            <string>Transmit is an excellent FTP (file transfer protocol), SFTP, S3 (Amazon.com file hosting) and iDisk/WebDAV client that allows you to upload, download, and delete files over the internet. With the most Mac-like interface available, Transmit makes FTP as simple, fun, and easy as it can possibly be.</string>
             <key>display_name</key>
-            <string>Trim Enabler</string>
+            <string>Transmit</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
@@ -32,7 +31,7 @@
     <key>MinimumVersion</key>
     <string>0.3.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.wbs75.download.trimenabler</string>
+    <string>com.github.wbs75.download.Transmit</string>
     <key>Process</key>
     <array>
         <dict>

@@ -1,0 +1,9 @@
+Processing Transmit.munki.recipe...
+Error parsing XML from appcast feed.
+Failed.
+
+The following recipes failed:
+    Transmit.munki.recipe
+        Error in com.github.wbs75.munki.Transmit: Processor: SparkleUpdateInfoProvider: Error: Error parsing XML from appcast feed.
+
+Nothing downloaded, packaged or imported.
