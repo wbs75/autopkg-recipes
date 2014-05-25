@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the latest Trim Enabler disk image and imports into Munki.</string>
+    <string>Downloads the latest Musicality disk image and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.wbs75.munki.trimenabler</string>
+    <string>com.github.wbs75.munki.Musicality</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>TrimEnabler</string>
+        <string>Musicality</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>utilities</string>
+        <string>audio\video</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -19,10 +19,9 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Trim Enabler is the first and safest utility for enabling Trim in Mac OS X. 
-            With the flip of a switch you can improve the speed and longevity of your Solid State Drive.</string>
+            <string>Musicality is a Mac OS X music player for Pandora, Last.fm, and Grooveshark that puts you in control. Use the media keys (F7, F8, F9), your own keyboard shortcuts, or the Apple remote to play, pause, skip, and rate your music. Stream to your AirPort, Apple TV, or any AirPlay-enabled device. Musicality gets your music out of the browser and into its very own window-no more juggling extra browser tabs (or accidentally closing the wrong one). Plus Growl notifications and Last.fm integration -- Musicality makes your music better!</string>
             <key>display_name</key>
-            <string>Trim Enabler</string>
+            <string>Musicality</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
@@ -32,7 +31,7 @@
     <key>MinimumVersion</key>
     <string>0.3.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.wbs75.download.trimenabler</string>
+    <string>com.github.wbs75.download.Musicality</string>
     <key>Process</key>
     <array>
         <dict>
