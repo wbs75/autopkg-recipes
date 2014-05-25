@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads Chameleon SSD Optimizer and imports into Munki.</string>
+    <key>Identifier</key>
+    <string>com.github.wbs75.munki.Chameleon-SSD-Optimizer</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Chameleon-SSD-Optimizer</string>
+        <key>MUNKI_REPO_SUBDIR</key>
+        <string>audio\video</string>
+        <key>pkginfo</key>
+        <dict>
+            <key>catalogs</key>
+            <array>
+                <string>testing</string>
+            </array>
+            <key>description</key>
+            <string>Chameleon SSD Optimizer is an optimization tool for Solid State Drives. It can enable TRIM on non Apple-branded disk, increase durability reducing I|O writing cycles, set hibernate mode and save space disabling sleep image. Chameleon is able to read sata system profiler info and you can easily check trim status, disk speed or properties. We added the reading of S.M.A.R.T. data how OS X does, so you can control the temperature, the firmware version and more. Now you can disable the local Time Machine, the Sudden Motion Sensor or noatime set for the system.</string>
+            <key>display_name</key>
+            <string>Chameleon-SSD-Optimizer</string>
+            <key>name</key>
+            <string>%NAME%</string>
+            <key>unattended_install</key>
+            <true/>
+        </dict>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.2.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.wbs75.download.Chameleon-SSD-Optimizer</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>Unarchiver</string>
+            <key>Arguments</key>
+            <dict>
+                <key>purge_destination</key>
+                <true/>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>DmgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>dmg_root</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+                <key>dmg_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%dmg_path%</string>
+                <key>repo_subdirectory</key>
+                <string>%MUNKI_REPO_SUBDIR%</string>
+            </dict>
+            <key>Processor</key>
+            <string>MunkiImporter</string>
+        </dict>
+    </array>
+</dict>
+</plist>
