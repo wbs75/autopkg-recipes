@@ -19,7 +19,8 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Trim Enabler is ????</string>
+            <string>Trim Enabler is the first and safest utility for enabling Trim in Mac OS X. 
+            With the flip of a switch you can improve the speed and longevity of your Solid State Drive.</string>
             <key>display_name</key>
             <string>Trim Enabler</string>
             <key>name</key>
