@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the current release version of %producto% and builds a package.</string>
+    <string>Downloads the latest Air Display Host and creates a package.</string>
     <key>Identifier</key>
-    <string>com.github.wbs75.pkg.Airdisplay</string>
+    <string>com.github.wbs75.pkg.airdisplay-host</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Airdisplay</string>
+        <string>airdisplay-host</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.autopkg.download.Airdisplay</string>
+    <string>com.github.wbs75.pkg.airdisplay-host</string>
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>Process</key>
@@ -23,7 +23,7 @@
             <key>Arguments</key>
             <dict>
                 <key>pkgroot</key>
-                <string>%pathname%</string>
+                <string>%RECIPE_CACHE_DIR%/%NAME%</string>
                 <key>pkgdirs</key>
                 <dict>
                     <key>Applications</key>
