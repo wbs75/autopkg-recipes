@@ -1,0 +1,8 @@
+Can't open URL http://www.yazsoft.com/files/sparkle5/appcast.xml
+Failed.
+
+The following recipes failed:
+    SpeedDownload.munki.recipe
+        Error in com.github.wbs75.munki.SpeedDownload: Processor: SparkleUpdateInfoProvider: Error: Can't open URL http://www.yazsoft.com/files/sparkle5/appcast.xml
+
+Nothing downloaded, packaged or imported.
