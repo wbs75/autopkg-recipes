@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>expandrive</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>audio\video</string>
+        <string>datatransfer</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
