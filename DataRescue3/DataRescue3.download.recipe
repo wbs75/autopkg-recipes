@@ -10,8 +10,6 @@
     <dict>
         <key>NAME</key>
         <string>DataRescue3</string>
-        <key>APPCAST_URL</key>
-        <string>http://www.prosofteng.com/resources/dr3.1/dr3.1_appcast.xml</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.2.9</string>
@@ -23,7 +21,7 @@
             <key>Arguments</key>
             <dict>
                 <key>appcast_url</key>
-                <string>%APPCAST_URL%</string>
+                <string>http://www.prosofteng.com/resources/dr3.1/dr3.1_appcast.xml</string>
             </dict>
         </dict>
         <dict>
