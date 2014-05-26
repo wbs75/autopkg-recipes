@@ -1,1 +1,2 @@
-download files has "tar.bz2"
+- download uses "tar.bz2" 
+- when it's extracted there no filename_extensions ".app'
