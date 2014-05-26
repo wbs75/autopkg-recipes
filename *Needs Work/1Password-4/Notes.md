@@ -16,3 +16,4 @@ Traceback (most recent call last):
     class 1Password-4URLProvider(Processor):
           ^
 SyntaxError: invalid syntax
+
