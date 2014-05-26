@@ -1,11 +1,20 @@
-# Error from last run, to tired to tinker with this recipe at moment.
 
-Traceback (most recent call last):
-  File "/usr/local/bin/autopkg", line 24, in <module>
-    import FoundationPlist
-  File "/Library/AutoPkg/FoundationPlist/__init__.py", line 2, in <module>
-    from FoundationPlist import *
-  File "/Library/AutoPkg/FoundationPlist/FoundationPlist.py", line 46, in <module>
-    from Foundation import NSData, \
-ImportError: No module named Foundation
+
+        Processing 1Password-4.munki.recipe...
+        Traceback (most recent call last):
+          File "/usr/local/bin/autopkg", line 1343, in <module>
+            sys.exit(main(sys.argv))
+          File "/usr/local/bin/autopkg", line 1337, in main
+            exit(subcommands[verb]['function'](argv))
+          File "/usr/local/bin/autopkg", line 1161, in run_recipes
+            autopackager.verify(recipe)
+          File "/Library/AutoPkg/autopkglib/__init__.py", line 332, in verify
+            step["Processor"], recipe=recipe)
+          File "/Library/AutoPkg/autopkglib/__init__.py", line 481, in get_processor
+            processor_name, processor_filename)
+          File "/Users/wbs/Library/AutoPkg/RecipeRepos/com.github.wbs75.autopkg-recipes/1Password-4/1Password-4URLProvider.py", line 30
+            class 1Password-4URLProvider(Processor):
+                  ^
+        SyntaxError: invalid syntax
+
 
