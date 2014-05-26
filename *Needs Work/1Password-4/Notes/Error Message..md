@@ -1,5 +1,5 @@
-    # Error from last run, to tired to tinker with this recipe at moment.
-  
+    # Error from last run:
+    
     Traceback (most recent call last):
     
       File "/usr/local/bin/autopkg", line 24, in <module>
