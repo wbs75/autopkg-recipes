@@ -20,24 +20,24 @@ import urllib2
 from autopkglib import Processor, ProcessorError
 
 
-__all__ = ["1Password-4URLProvider"]
+__all__ = ["onePassword4URLProvider"]
 
 
-MAIN_DOWNLOAD_URL = "https://agilebits.com/onepassword/mac"
+MAIN_DOWNLOAD_URL = "https://app-updates.agilebits.com"
 
-re_zip_url = re.compile(r'<a href=[\'\"](?P<zip_url>http://i.agilebits.com/dist/1P/mac4/1Password-[-_][0-9\.]+\.zip)[\'\"]>', re.IGNORECASE)
+re_zip_url = re.compile(r'<a href=[\'\"](?P<zip_url>http://i.agilebits.com/dist/1P/mac4/1Password[-_][0-9\.]+\.zip)[\'\"]>', re.IGNORECASE)
 
-class 1Password-4URLProvider(Processor):
-    """Provides a download URL for the latest 1Password-4"""
+class onePassword4URLProvider(Processor):
+    """Provides a download URL for the latest onePassword4"""
     input_variables = {
         "base_url": {
             "required": False,
-            "description": "The 1Password-4 download site",
+            "description": "The onePassword4 download site",
         },
     }
     output_variables = {
         "url": {
-            "description": "URL to the latest 1Password-4 release.",
+            "description": "URL to the latest onePassword4 release.",
         },
     }
     description = __doc__
@@ -62,7 +62,7 @@ class 1Password-4URLProvider(Processor):
         return zip_url
 
 
-    def get_1Password-4_zip_url(self, base_url):
+    def get_onePassword4_zip_url(self, base_url):
         """Find and return a download URL"""
 
         # Parse the download page to get a zip link
@@ -73,10 +73,10 @@ class 1Password-4URLProvider(Processor):
 
     def main(self):
         base_url = self.env.get("base_url", MAIN_DOWNLOAD_URL)
-        self.env["url"] = self.get_1Password-4_zip_url(base_url)
+        self.env["url"] = self.get_onePassword4_zip_url(base_url)
         self.output("Found URL %s" % self.env["url"])
 
 
 if __name__ == "__main__":
-    processor = 1Password-4URLProvider()
+    processor = onePassword4URLProvider()
     processor.execute_shell()
