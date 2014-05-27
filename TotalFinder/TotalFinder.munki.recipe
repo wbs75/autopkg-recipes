@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
         <key>MUNKI_REPO_SUBDIRECTORY</key>
-        <string>apps/%NAME%</string>
+        <string>productivity</string>
         <key>MUNKI_MIN_OS_VERSION</key>
         <string>10.8</string>
         <key>pkginfo</key>
