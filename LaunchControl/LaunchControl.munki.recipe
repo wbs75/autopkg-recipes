@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads Beamer and imports into Munki.</string>
+    <string>Downloads LaunchControl and imports into Munki.</string>
     <key>Identifier</key>
-    <string>com.github.wbs75.munki.beamer</string>
+    <string>com.github.wbs75.munki.LaunchControl</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>beamer</string>
+        <string>LaunchControl</string>
         <key>MUNKI_REPO_SUBDIR</key>
-        <string>audio\video</string>
+        <string>system-admin</string>
         <key>pkginfo</key>
         <dict>
             <key>catalogs</key>
@@ -19,9 +19,9 @@
                 <string>testing</string>
             </array>
             <key>description</key>
-            <string>Beamer: Drag, Drop, Watch!</string>
+            <string>LaunchControl is a launchd(8) frontend allowing you to manage and debug system and user services on your Mac. All documented features of launchd(8) are supported. It reports potential problems even before a job is started and makes sure you always create valid configurations.</string>
             <key>display_name</key>
-            <string>Beamer</string>
+            <string>LaunchControl</string>
             <key>name</key>
             <string>%NAME%</string>
             <key>unattended_install</key>
@@ -31,7 +31,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.wbs75.download.beamer</string>
+    <string>com.github.wbs75.download.LaunchControl</string>
     <key>Process</key>
     <array>
         <dict>

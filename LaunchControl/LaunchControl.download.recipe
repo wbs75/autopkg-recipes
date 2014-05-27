@@ -25,7 +25,7 @@
                 <key>appcast_url</key>
                 <string>http://www.soma-zone.com/LaunchControl/a/appcast.xml</string>
                 <key>re_pattern</key>
-                <string>(?P&lt;url&gt;http.*?macosx-x86_64.zip)</string>
+                <string>(?P&lt;url&gt;http://www.soma-zone.com/download/files/LaunchControl(?P&lt;version&gt;.*?)/LaunchControl_.*?..tar.bz2/download)</string>
             </dict>
         </dict>
         <dict>
