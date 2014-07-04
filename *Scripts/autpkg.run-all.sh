@@ -17,9 +17,9 @@ autopkg run \
                 Snippets.munki.recipe \
                 TechToolPro-7.munki.recipe \
                 TotalFinder.munki.recipe \
-                Transmit.munki.recipe \
+                com.github.wbs75.munki.Transmit Transmit.munki.recipe \
                 TrimEnabler.munki.recipe \
-                VLC.munki.recipe
+                com.github.wbs75.autopkg-recipes VLC.munki.recipe
 
 
 # RecipeOverrides
@@ -30,7 +30,7 @@ autopkg run \
                 AirServer.pkg.recipe \
                 Alfred2.munki.recipe \
                 Atom.munki.recipe \
-                AutoDMG.munki.recipe \
+                com.github.autopkg.timsutton-recipes AutoDMG.munki.recipe \
                 BatChmod.munki.recipe \
                 CarbonCopyCloner.munki.recipe \
                 CheatSheet.munki.recipe \
