@@ -16,7 +16,7 @@
         <dict>
             <key>catalogs</key>
             <array>
-                <string>testing</string>
+                <string>production</string>
             </array>
             <key>description</key>
             <string>LaunchControl is a launchd(8) frontend allowing you to manage and debug system and user services on your Mac. All documented features of launchd(8) are supported. It reports potential problems even before a job is started and makes sure you always create valid configurations.</string>

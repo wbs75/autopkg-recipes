@@ -16,7 +16,7 @@
         <dict>
             <key>catalogs</key>
             <array>
-                <string>testing</string>
+                <string>production</string>
             </array>
             <key>description</key>
             <string>With Air Display, you can turn your Mac into a wireless display. Extend your desktop to another Mac or Windows computer!</string>

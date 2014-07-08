@@ -16,7 +16,7 @@
         <dict>
             <key>catalogs</key>
             <array>
-                <string>testing</string>
+                <string>production</string>
             </array>
             <key>description</key>
             <string>Script Debugger provides everything you need to quickly and easily author AppleScripts that work. No other scripting tool can match Script Debugger's capabilities for creating, editing and debugging AppleScripts. Its sophisticated Dictionary browser provides far more information than any other tool can and eliminates guesswork and needless experimentation. Simply put, Script Debugger makes AppleScript easy.</string>

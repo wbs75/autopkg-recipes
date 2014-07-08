@@ -16,7 +16,7 @@
         <dict>
             <key>catalogs</key>
             <array>
-                <string>testing</string>
+                <string>production</string>
             </array>
             <key>description</key>
             <string>Dyn Updater is an OS X client for use with the free and paid DNS services provided by Dyn.</string>

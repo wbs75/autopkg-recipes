@@ -16,7 +16,7 @@
         <dict>
             <key>catalogs</key>
             <array>
-                <string>testing</string>
+                <string>production</string>
             </array>
             <key>description</key>
             <string>TechTool Pro is now 7, and this is the most advanced version of the acclaimed Macintosh troubleshooting utility created in its 20-year history. Micromat has redeveloped TechTool Pro 7 to be fully 64-bit compatible, which allows the program to run more efficiently on the latest Macintosh computers. We also added a fantastic new RAM test that can find problems which no other utility can; and we also improved many of the testing, repair, and maintenance routines.</string>

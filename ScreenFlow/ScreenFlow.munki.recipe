@@ -16,7 +16,7 @@
         <dict>
             <key>catalogs</key>
             <array>
-                <string>testing</string>
+                <string>production</string>
             </array>
             <key>description</key>
             <string>ScreenFlow is powerful, easy-to-use screencasting software for the Mac. With ScreenFlow you can record the contents of your entire monitor while also capturing your video camera, microphone and your computer audio.</string>
